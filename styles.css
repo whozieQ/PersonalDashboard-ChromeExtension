@@ -6,6 +6,7 @@ html, body {
     margin: 0;
     padding: 0;
     line-height: 1.4;
+    font-size: 16px;
 }
 
 body {
@@ -89,6 +90,9 @@ main{
 .stockPrice{
     width: 45%;
 }
+.changeIcon{
+    text-shadow: none;
+}
 .weatherSymbol{
     max-height: 3.5rem;
 }
@@ -114,4 +118,8 @@ body{
     text-shadow: 2px 0 black;
     color: white;
     font-family: 'Montserrat', sans-serif;
+}
+#stock,
+#description{
+    font-size: 1.2rem;
 }

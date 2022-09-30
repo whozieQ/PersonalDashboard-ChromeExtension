@@ -1,6 +1,10 @@
 
 //Dynamically pull a background image
-fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=disney")
+const imgOptions = ["disney","marvel", "tardis","fsu","krispy kreme","fall"]
+const index = Math.floor(Math.random()*imgOptions.length)
+let imgCategory = imgOptions[index]
+
+fetch(`https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=${imgCategory}`)
 .then( res => res.json())
 .then( data => {
     document.body.style.backgroundImage = `url(${data.urls.regular})`
