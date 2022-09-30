@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+body {
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+main{
+    height: 100vh;
+    padding: 15px;
+    display: grid;
+    grid-template: repeat(9, 1fr) / repeat(12, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+        ". s s . . . . . . w w ."
+        ". . . . . . . . . b b ."
+        ". . . . . . . . . . . ."
+        ". . . . t t t t . . . ."
+        ". . . . t t t t . . . ."
+        ". . . . t t t t . . . ."
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        ". d d d . . . . . . . .";
+
+}
+.backgroundShadow{
+    background-color: rgba(3, 3, 3, 36%);
+    border: 1px solid rgb(219, 219, 219);
+}
+#bonus-container{
+    grid-area: b;
+    padding-left: .5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#description{
+    grid-area: d;
+    align-self: center;
+    padding-left: 1rem;
+    border-radius: 10px;
+}
+#stock{
+    grid-area: s;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+}
+#weather{
+    grid-area: w;
+    border-radius: 10px;
+}
+#time-container{
+    grid-area: t;
+    align-self: center;
+    justify-self: center;
+    font-size: 5rem;
+    font-weight: 700;
+    text-shadow: 10px 10px 10px #070707;
+}
+#time{
+    display: inline-block;
+}
+#ampm{
+    font-size: 3rem;
+}
+.quoteContainer{
+    display: flex;
+    text-align: right;
+    margin-top: .5rem;
+}
+.stockSymbol{
+    width: 30%;
+}
+.stockPrice{
+    width: 45%;
+}
+.weatherSymbol{
+    max-height: 3.5rem;
+}
+.weatherTop{
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+
+}
+ .weatherTop p{
+    margin: 0;
+}
+
+.weatherBottom{
+    text-align: center;
+    margin: 0;
+    padding-bottom: .5rem;
+}
+/* typography */
+body{
+    text-shadow: 2px 0 black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
