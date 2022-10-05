@@ -20,7 +20,7 @@ fetch(`https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
 const stockIDs = ["HD","DIS"]
 getStock()
 startClock()
-const myLocation = navigator.geolocation.getCurrentPosition(data=>{getWeather(data.coords.latitude, data.coords.longitude)})
+// const myLocation = navigator.geolocation.getCurrentPosition(data=>{getWeather(data.coords.latitude, data.coords.longitude)})
 daysToChristmas()
 
 async function getStock(){
